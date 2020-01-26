@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700|Prompt:400,500,600,700,800,900|Cinzel:600&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Original Indie</title>
+</head>
+<body>
+    <nav>
+        <div class="dropdown">
+            <a href="#games">Games</a>
+            <div class="content">
+                <a href="#impaired">Impaired</a>
+            </div>
+        </div>
+        <a href="#team">Team</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <main>
+        <section style="background-image: url('media/back.gif')">
+            <div class="title">
+                <h1>Original Indie</h1><br/>
+                <p>Original games for everyone.</p>
+            </div>
+        </section>
+        <section id="games">
+            <div style="width:40%;float:left">
+                <h1>Our Games</h1>
+                <p>
+                    
+                </p>
+            </div>
+            <div class="cards vertical" style="margin-left:auto;width:50%;max-height:100vh">
+                <div class="card" id="impaired">
+                    <span>
+                        <h1>Impaired</h1>
+                        <p>
+                            Attempt to survive through mazes filled with darkness.<br/>
+                            Your only sense of direction comes from your own footsteps echoing back at you.
+                        </p>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section id="team" style="background-image: url('media/back2.gif')">
+            <div style="background-color:rgba(255,255,255,0.5);color:#000">
+                <h1>The Team</h1>
+                <p>Our team currently consists of 2 high-schoolers eager to learn about the techniques needed to create an enjoyable and unique game.</p>
+            </div>
+            <div>
+                <h1>Roël Couwenberg</h1>
+                <p>Roël is a sixteen year old with a passion for coding and design. Fluent in PHP, C++, C#, Python, and more.</p>
+            </div>
+            <div>
+                <h1>Olivier Dral</h1>
+                <p>Olivier is a sixteen year old and a logic thinker who will always attempt to solve any problem he faces.</p>
+            </div>
+            <div style="background-color:rgba(255,255,255,0.7);color:#000">
+                <h1>Want to be a part of us?</h1>
+                <p>Send in your application along with a resume and we'll get right back to you!<br/>
+                    <a href="#">join@originalindie.com</a>
+                </p>
+            </div>
+        </section>
+        <section id="news">
+            <h1>Latest News</h1>
+            <p>We don't have twitter.</p>
+        </section>
+        <section id="contact" style="background-image:url('media/back3.gif');color:#fff">
+            <span>
+                <h1>Contact Us!</h1>
+                <p>
+                    <a href="mailto:contact@originalindie.com">contact@originalindie.com</a><br/>
+                    +31 6 24332292<br/>
+                    <br/>
+                    Ds. Pierson College, Geraert Borchstraat 1<br/>
+                    5212 CZ 's-Hertogenbosch, The Netherlands<br/>
+                </p>
+            </span>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script type="application/javascript" charset="utf-8">
+
+		$(window).scroll(() => {
+			$(window).scrollTop() >= 20 ? $('nav').addClass('scrolled') : $('nav').removeClass('scrolled');
+//			$('section').each(() => {
+//			    if ($(this).offset().top <= $(window).scrollTop() && $(this).next().offset().top >= $(window).scrollTop()) {
+//			        let pageID = $(this).attr('id');
+//			        $('nav a').each(() => {
+//			            if (pageID === $(this).attr('href')) {
+//			                console.log(pageID + ' found.');
+//			            }
+//			        })
+//			    }
+//			})
+		});
+    </script>
+</body>
+</html>
