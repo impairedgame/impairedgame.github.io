@@ -1,3 +1,9 @@
+#logoimg {
+  height: 80px;
+  opacity: 1;
+  position: relative;
+  float: left;
+}
 :root {
     --nav-color: #fff;
 }
@@ -17,6 +23,7 @@ a {
     opacity:0.7;
     text-decoration:none;
     transition:opacity .3s ease;
+    padding: 0 25px;
 }
 a:hover {
     opacity:1;
@@ -35,7 +42,6 @@ nav {
     transition: padding 0.3s ease;
     background-color: rgba(0,0,0,0.05);
     text-align: right;
-    padding: 0 25px;
     z-index: 50;
 }
 .dropdown {
@@ -80,7 +86,7 @@ nav > a, .dropdown {
     padding: 30px 25px;
 }
 nav.scrolled > a, nav.scrolled > .dropdown {
-    padding: 20px 25px;
+    padding: 25px 25px;
 }
 /* nav::after {
     display: block;
