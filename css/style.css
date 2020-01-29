@@ -1,8 +1,9 @@
 #logoimg {
-  height: 80px;
-  opacity: 1;
   position: relative;
-  float: left;
+  height: 60px;
+  left: 5px;
+  top: 50%;
+  transform: translate(0,-50%);
 }
 :root {
     --nav-color: #fff;
